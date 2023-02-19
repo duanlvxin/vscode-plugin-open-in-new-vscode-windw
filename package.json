@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.27.0"
   },
+  "publisher": "duanlvxin",
   "categories": [
     "Other"
   ],
