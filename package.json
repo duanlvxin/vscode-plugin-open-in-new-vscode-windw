@@ -1,7 +1,7 @@
 {
   "name": "open-file-in-new-vscode-window",
   "displayName": "Open File In New Vscode Window",
-  "description": "右键点击文件/文件夹，可以选择在新vscode窗口中打开",
+  "description": "Right-click the file/folder to open it in the new vscode window",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.27.0"
@@ -9,6 +9,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "activationEvents": [
     "onCommand:open-file-in-new-vscode-window.helloWorld"
   ],
