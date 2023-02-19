@@ -4,7 +4,7 @@
   "description": "右键点击文件/文件夹，可以选择在新vscode窗口中打开",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.27.0"
   },
   "categories": [
     "Other"
