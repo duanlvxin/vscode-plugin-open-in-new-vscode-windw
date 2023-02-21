@@ -2,7 +2,7 @@
 	"name": "open-file-in-new-vscode-window",
 	"displayName": "Open File In New Vscode Window",
 	"description": "Right-click the file/folder to open it in the new vscode window",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.54.1"
 	},
