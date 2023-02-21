@@ -18,18 +18,8 @@ function activate(context) {
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('open-file-in-new-vscode-window.openFileInNewVscodeWindow', function (fileInfo) {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Hello World from Open File In New Vscode Window!');
-
-		// 获取点击文件/文件夹的路径
-		console.log(fileInfo._fsPath, fileInfo.path);
-
 		// 使用新vscode窗口打开该文件/文件夹
-		vscode.commands.executeCommand('workbench.action.newWindow').then(()=>{
-			vscode.commands.executeCommand('vscode.openFolder', vscode.Uri.file(fileInfo.path));
-		})
+		vscode.commands.executeCommand('vscode.openFolder', vscode.Uri.file(fileInfo.path), {forceNewWindow: true});
 	});
 
 	context.subscriptions.push(disposable);

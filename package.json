@@ -1,54 +1,60 @@
 {
-  "name": "open-file-in-new-vscode-window",
-  "displayName": "Open File In New Vscode Window",
-  "description": "Right-click the file/folder to open it in the new vscode window",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.27.0"
-  },
-  "publisher": "duanlvxin",
-  "categories": [
-    "Other"
-  ],
-  "icon": "images/icon.png",
-  "activationEvents": [
-    "onCommand:open-file-in-new-vscode-window.helloWorld"
-  ],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
-        "title": "Open In New Vscode Window"
-      }
-    ],
-    "menus": {
-      "explorer/context": [
-        {
-          "command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
-          "group": "navigation"
-        }
-      ]
-    }
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
-  },
-  "dependencies": {
-    "@types/vscode": "^1.75.0",
-    "@types/glob": "^8.0.0",
-    "@types/mocha": "^10.0.0",
-    "@types/node": "16.x",
-    "eslint": "^8.26.0",
-    "glob": "^8.0.3",
-    "mocha": "^10.1.0",
-    "typescript": "^4.8.4",
-    "@vscode/test-electron": "^2.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/duanlvxin/vscode-plugin-open-in-new-vscode-windw"
-  }
+	"name": "open-file-in-new-vscode-window",
+	"displayName": "Open File In New Vscode Window",
+	"description": "Right-click the file/folder to open it in the new vscode window",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.54.1"
+	},
+	"publisher": "duanlvxin",
+	"categories": [
+		"Other"
+	],
+	"icon": "images/icon.png",
+	"activationEvents": [
+		"onCommand:open-file-in-new-vscode-window.openFileInNewVscodeWindow"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
+				"title": "Open In New Vscode Window"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"dependencies": {
+		"@types/vscode": "^1.75.0",
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "16.x",
+		"eslint": "^8.26.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.1.0",
+		"typescript": "^4.8.4",
+		"@vscode/test-electron": "^2.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/duanlvxin/vscode-plugin-open-in-new-vscode-windw"
+	},
+	"__metadata": {
+		"id": "a7bbe19d-79fa-4ee2-8f47-05208f15ca01",
+		"publisherDisplayName": "duanlvxin",
+		"publisherId": "7c9249da-53d0-4101-8e65-6ccbbb0d96a2",
+		"isPreReleaseVersion": false
+	}
 }
