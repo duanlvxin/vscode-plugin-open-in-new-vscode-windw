@@ -2,7 +2,7 @@
 	"name": "open-file-in-new-vscode-window",
 	"displayName": "Open File In New Vscode Window",
 	"description": "Right-click the file/folder to open it in the new vscode window",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"engines": {
 		"vscode": "^1.54.1"
 	},
@@ -19,11 +19,27 @@
 		"commands": [
 			{
 				"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
-				"title": "Open In New Vscode Window"
+				"title": "Open In New Vscode Window",
+				"icon": {
+					"light": "images/light/icon.svg",
+					"dark": "images/dark/icon.svg"
+				}
 			}
 		],
 		"menus": {
 			"explorer/context": [
+				{
+					"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
+					"group": "navigation"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
+					"group": "navigation"
+				}
+			],
+			"editor/context": [
 				{
 					"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
 					"group": "navigation"
