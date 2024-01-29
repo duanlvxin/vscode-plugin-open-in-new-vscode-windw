@@ -21,8 +21,8 @@
 				"command": "open-file-in-new-vscode-window.openFileInNewVscodeWindow",
 				"title": "Open In New Vscode Window",
 				"icon": {
-					"light": "images/light/icon.svg",
-					"dark": "images/dark/icon.svg"
+					"light": "images/light/icon.png",
+					"dark": "images/dark/icon.png"
 				}
 			}
 		],
